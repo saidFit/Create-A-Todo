@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Splash&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+              /* Josefin Sans */
+    margin: 1px 0 0 3px;
+    padding: 0;
+    font-size: 20px;
+    outline: none;
+  
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  
+}
+.container-Global{
+    width: 440px;
+    max-width: 900px !important;
+    background: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.container-under-input{
+    display: flex;
+    align-items: center;
+    margin:20px 0;
+    justify-content: space-around;
+}
+.container-under-input p{
+    cursor: pointer;
+}
+.input{
+    width: calc(100% - 30%);
+    max-width: 900px;
+    outline: none;
+    border: 1.7px solid rgba(0, 0, 0, 0.227);
+    padding:15px 10px 15px 60px;
+    transition: all .5s ease;
+    border-radius: 9px;
+}
+
+@media (max-width:477px) {
+    .input{
+        width: calc(100% - 30%);
+        max-width: 900px;
+     
+    }
+    .container-Global {
+        width: 96vw;
+        max-width: 900px !important;
+       
+    }
+    .container-under-input {
+       
+        flex-wrap: wrap;
+       
+    }
+    .btn-add {
+      
+        padding: 15px 20px !important;
+      
+    }
+    
+}
+
+
+
+.input:focus{
+    
+
+    border: 1.7px solid rgb(55, 116, 216);
+    
+}
+
+.btn-add{
+    background: darkcyan;
+    border: none;
+    color: #ffff;
+    padding: 15px 20px;
+    width: 25%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.background{
+    background: #1798fb;
+}
+.btn-clear{
+
+    background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+    border: none;
+    color: #ffff;
+    padding: 9px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.container-articles section .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  padding: 18px 0;
+   width: 95.4%;
+  
+}
+
+.container-checkbox {
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+.container-checkbox input{
+ 
+   width: 19%;
+   height: 19%;
+   font-size: 40px;
+   cursor: pointer;
+}
+hr{
+    opacity: .4;
+}
+
+.fa-ellipsis{
+    cursor: pointer;
+
+}
+
+.container-abs{
+   
+    position: relative;
+} 
+ /* .container-abs:hover .container-update-delete{
+    transform: scale(1);
+} */
+.container-abs div{
+    position: absolute;
+    z-index: 7;
+    top: 3px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.193);
+    text-align: center;
+    transform-origin: top right;
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+    border-radius: 8px;
+}
+
+
+
+.shaw{
+    transform:scale(1) !important;
+}
+.container-abs div p{
+   width: 100%;
+   padding: 8px 28px;
+   margin-left: -1px;
+  text-align: start;
+  
+   transition: all .3s ease;
+}
+.container-abs div p:hover{
+  cursor: pointer;
+  background: rgba(161, 158, 158, 0.132);
+}
+
+.active{
+    color:cornflowerblue;
+    transition: all .4s ease;
+}
+
+.content{
+   /* margin-left: 6px; */
+   width: 100%;
+}
+
+.none{
+    display: none;
+}
+
+.container-input-add{
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+.fa-align-left{
+    position: absolute;
+    top:45%;
+    left:8%;
+    transform: translate(-50%,-50%);
+    opacity: .6;
+}
